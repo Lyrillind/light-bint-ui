@@ -80,8 +80,8 @@ atom-panel.modal {
     z-index: 0;
     background-color: @overlay-background-color;
     border-top: 1px solid hsla(0,0%,0%,.2);
-    border-radius: 0 0 @component-border-radius*2 @component-border-radius*2;
-    box-shadow: 0 6px 12px -2px hsla(0,0%,0%,.4);
+    border-radius: @component-border-radius;
+    box-shadow: 0 6px 50px -2px hsla(0,0%,0%,.6);
   }
 
   // Backdrop
@@ -105,4 +105,8 @@ atom-panel.modal {
     100% { opacity: 1; }
   }
 
+}
+
+.overlay.from-top {
+  top: 20%;
 }

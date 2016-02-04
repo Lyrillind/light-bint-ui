@@ -35,17 +35,17 @@
 @text-color-highlight:  darken(@text-color, 10%);
 @text-color-selected:   darken(@text-color-highlight, 10%);
 
-@text-color-info:    hsl(208, 100%, 54%);
-@text-color-success: hsl(132,  60%, 44%);
-@text-color-warning: hsl( 37,  90%, 44%);
-@text-color-error:   hsl(  0,  90%, 56%);
+@text-color-info:    hsl(208, 100%, 50%);
+@text-color-success: hsl(132,  60%, 48%);
+@text-color-warning: hsl( 35,  100%, 50%);
+@text-color-error:   hsl(  0,  100%, 56%);
 
 
 // Background -----------------
-@background-color-info:    hsl(208, 100%, 56%);
-@background-color-success: hsl(132,  48%, 48%);
-@background-color-warning: hsl( 40,  60%, 52%);
-@background-color-error:   hsl(  0,  60%, 56%);
+@background-color-info:    hsl(208, 100%, 50%);
+@background-color-success: hsl(132,  60%, 48%);
+@background-color-warning: hsl( 35,  100%, 50%);
+@background-color-error:   hsl(  0,  100%, 56%);
 
 @background-color-highlight: hsla(@ui-hue, @ui-saturation, 50%,.08);
 @background-color-selected:  hsla(@ui-hue, @ui-saturation, 50%,.16);
@@ -82,18 +82,18 @@
 @button-background-color-selected: lighten(@base-accent-color, 4%);
 @button-border-color:              @base-border-color;
 
-@tab-bar-background-color:         @level-3-color;
+@tab-bar-background-color:         linear-gradient(#F0F0F0, #E1E1E1);;
 @tab-bar-border-color:             @base-border-color;
-@tab-background-color:             @level-3-color;
+@tab-background-color:             @tab-bar-background-color;
 @tab-background-color-active:      @level-2-color;
 @tab-border-color:                 @base-border-color;
 
-@tree-view-background-color:       @level-3-color;
+@tree-view-background-color:       @level-4-color;
 @tree-view-border-color:           @base-border-color;
 
 @ui-site-color-1: hsl(208, 100%, 56%); // blue
 @ui-site-color-2: hsl(132,  48%, 48%); // green
-@ui-site-color-3: hsl( 40,  60%, 52%); // orange
+@ui-site-color-3: hsl( 35,  100%, 52%); // orange
 @ui-site-color-4: #D831B0;             // pink
 @ui-site-color-5: #EBDD5B;             // yellow
 
@@ -139,6 +139,7 @@
 @level-1-color: lighten(@base-background-color, 4%);
 @level-2-color: @base-background-color;
 @level-3-color: darken(@base-background-color, 8%);
+@level-4-color: #f8f8f8;
 
 
 // Base (Custom) -----------------

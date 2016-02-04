@@ -14,11 +14,19 @@
     }
     & > .header .name {
       line-height: @ui-tab-height;
+      font-weight: 600;
     }
   }
 
   .selected:before {
-    background: @background-color-highlight;
+    background: linear-gradient(#286BFB, #2988DE);;
+  }
+
+  li:not(.list-nested-item).selected,
+  li.list-nested-item.selected > .list-item {
+    .text(selected);
+    color: white !important;
+    font-weight: 600;
   }
 }
 
@@ -38,12 +46,16 @@
 .list-tree li:not(.list-nested-item),
 .list-group li.list-nested-item > .list-item,
 .list-tree li.list-nested-item > .list-item {
-  line-height: @tree-view-height;
+  line-height: 2.4em;
+
+  &.header {
+    font-weight: 600;
+  }
 }
 
 .list-group .selected::before,
 .list-tree .selected::before {
-  height: @tree-view-height;
+  height: 2.4em;
 }
 
 // icon
