@@ -46,3 +46,23 @@ atom-text-editor[mini] {
 linter-panel linter-message {
   font-size: 14px;
 }
+
+atom-text-editor {
+  &,
+  &::shadow {
+    .gutter {
+      .line-number {
+        min-width: 2.2em;
+        padding-left: 16px !important;
+
+        &.git-line-added {
+          border-color: #699D36 !important;
+        }
+
+        &.git-line-added, &.git-line-modified {
+          padding-left: 14px !important;
+        }
+      }
+    }
+  }
+}
