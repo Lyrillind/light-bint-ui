@@ -14,22 +14,20 @@ atom-text-editor[mini] {
   border: 1px solid @input-border-color;
   background-color: @input-background-color;
 
-  &,
-  &::shadow {
-    .placeholder-text {
-      color: @text-color-subtle;
-    }
-    .selection .region {
-      background-color: @input-selection-color;
-    }
-    .cursor {
-      border-color: @base-accent-color;
-      border-width: 2px;
-    }
+  .placeholder-text {
+    color: @text-color-subtle;
   }
 
-  &.is-focused,
-  &.is-focused::shadow {
+  .selection .region {
+    background-color: @input-selection-color;
+  }
+
+  .cursor {
+    border-color: @base-accent-color;
+    border-width: 2px;
+  }
+
+  &.is-focused {
     .focus();
     background-color: @input-background-color-focus;
     .selection .region {
@@ -48,20 +46,17 @@ linter-panel linter-message {
 }
 
 atom-text-editor {
-  &,
-  &::shadow {
-    .gutter {
-      .line-number {
-        min-width: 2.2em;
-        padding-left: 16px !important;
+  .gutter {
+    .line-number {
+      min-width: 2.2em;
+      padding-left: 16px !important;
 
-        &.git-line-added {
-          border-color: #699D36 !important;
-        }
+      &.git-line-added {
+        border-color: #699D36 !important;
+      }
 
-        &.git-line-added, &.git-line-modified {
-          padding-left: 14px !important;
-        }
+      &.git-line-added, &.git-line-modified {
+        padding-left: 14px !important;
       }
     }
   }
