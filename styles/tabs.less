@@ -50,9 +50,14 @@
       background-color: @tab-background-color;
       background-clip: content-box;
       backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &::before {
-        margin-top: 12px !important;
+        position: relative !important;
+        margin-left: auto !important;
+        margin-top: 2px !important;
       }
     }
     &:hover .title {
